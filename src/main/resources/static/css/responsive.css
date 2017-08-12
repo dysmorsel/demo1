@@ -1,0 +1,88 @@
+
+
+//  Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+@media (min-width : 992px) {}
+@media (min-width : 768px) and (max-width: 991px){
+	.hero-content span{
+		font-size: xx-large;
+		width:100%;
+	}
+	.about-intro{
+		margin-top: 30px;
+	}
+	.contact-info-block {
+		padding: 67px 30px;
+		margin-bottom: 40px;
+	}
+	
+	.feature-content-box {
+		margin-bottom: 46px;
+	}
+	
+	.feature-content-block {
+		padding: 40px 20px;
+	}
+
+	
+	#section-contact .section-title{
+		margin: 0px;
+		text-align: left;
+	}
+
+	#section-message .section-title{
+		margin: 0px;
+		text-align: left;
+	}
+}
+
+
+@media (min-width :480px) and (max-width:767px){
+
+	.hero-content span{
+		width:100%;
+	}
+
+	.feature-content-block {
+		padding: 40px 20px;
+	}
+	
+	.about-intro{
+		margin-top: 30px;
+	}
+	.contact-info-block {
+		padding: 67px 30px;
+		margin-bottom: 40px;
+	}
+	
+	.feature-content-box {
+		margin-bottom: 46px;
+	}
+	
+	
+} 
+
+
+
+
+@media (min-width : 320px) and (max-width: 478px)  {
+	
+	.hero-content h1 span{
+		font-size:xx-large;
+	}
+
+
+	.about-intro{
+		margin-top: 30px;
+	}
+	.contact-info-block {
+		padding: 67px 30px;
+		margin-bottom: 40px;
+	}
+	
+	.feature-content-box {
+		margin-bottom: 46px;
+	}
+}
+
