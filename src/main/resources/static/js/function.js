@@ -44,8 +44,8 @@ $(document).ready(function () {
                         // $("#showMessage").html(data[0].message);
                     }
                 },
-                error:function (data) {
-                    alert(data.responseText);
+                error:function (errorData) {
+                    alert(errorData.responseText);
                 }
             }
         )
