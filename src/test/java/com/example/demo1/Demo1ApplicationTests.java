@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.Arrays;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class Demo1ApplicationTests {
@@ -33,6 +35,11 @@ public class Demo1ApplicationTests {
 		String allMessage = gson.toJson(messageRepository.queryAll());
 		System.out.println(allMessage);
 		System.out.println(messageRepository.queryAll().toString());
+	}
+
+	@Test
+	public void lamda(){
+		Arrays.asList("a","b","c").forEach(System.out::println);
 	}
 
 }
