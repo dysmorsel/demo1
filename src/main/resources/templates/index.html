@@ -91,7 +91,7 @@
 			<div class="col-md-6 col-sm-6 col-md-offset-1 wow fadeInRight">
 				<div class="about-intro">
 					<h4>I design ugly web by programming. <br/>I have no experience in the field. </h4>
-					<p>就跟左边的图片一样，我现在一脑子的问号！</p>
+					<p>在这里，你可以做很多事情！</p>
 					<img th:src="@{images/sign.png}" alt="" class="img-responsive"/>
 					<div class="btn-container">
 						<a href="#section-service" class="btn-action feature">services</a>
@@ -340,8 +340,42 @@
 			</div>
 		</div>
   </section>
-  <!-- SECTION SERVICE END  --> 
-  
+  <!-- SECTION SERVICE END  -->
+
+<!--SECTION DEBUG Start-->
+<section id="section-debug" class="section-padding debug-piece">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title center wow fadeInUp">
+						<div class="section-box"></div>
+						<h1>Debug</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
+					<div class="section-title ">
+						<h2 class="text-uppercase">file load testing</h2>
+						<p>选择你要上传的文件</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
+					<form id="fileUpload" enctype="multipart/form-data" method="post" >
+						<input id="file" name="file" type="file" />
+						<input id="token" name="token" type="hidden"/>
+					</form>
+
+					<ul id="uploadCtx" class="no-padding"></ul>
+				</div>
+			</div>
+
+		</div>
+</section>
 	  
 <!--         SECTION GALLERY START  -->
 <section id="section-gallery" class="section-padding grey-bg">

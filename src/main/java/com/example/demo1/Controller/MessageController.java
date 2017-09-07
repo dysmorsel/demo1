@@ -15,6 +15,10 @@ public class MessageController {
     @Autowired
     MessageRepository messageRepository;
 
+    /**
+     * 显示所有留言
+     * @return
+     */
     @RequestMapping(value = "/message",method = RequestMethod.GET)
     public String getAllMessage(){
         String allMessage = gson.toJson(messageRepository.queryAll());

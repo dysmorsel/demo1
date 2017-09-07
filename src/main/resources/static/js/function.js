@@ -50,6 +50,48 @@ $(document).ready(function () {
             }
         )
 
-    })
+    });
+//AJAX 无刷新上传文件
+    $("#file").change(function () {
+        /*var formData = new FormData($("#fileUpload")[0]);
+        var file = $("#file")[0];*/
+        var fileUpload = $("#fileUpload")[0];
+        if($("#file").val().length>0){
+            fileUpLoad();
+        }
+        else {
+            alert("请选择文件！");
+        }
+
+        // console.log(formData);
+        function fileUpLoad() {
+            $.ajax(
+                {
+                    url: "/fileLoad",
+                    type: "POST",
+                    cache: false,
+                    data: new FormData(fileUpload),
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        var fileCtx = $('#uploadCtx');
+                        var data = eval(response);
+
+                        while (fileUpload.hasChildNodes()){
+                            fileUpload.removeChild(fileUpload.firstChild);
+                        }
+                        for(let i = 0; i<data.length; i++){
+
+                            fileCtx.append(`<textarea class="form-control" rows=${data.length}  readonly="readonly"> ${data[i]} </textarea>`);
+                        }
+                    },
+                    error: function (response) {
+                        alert(response);
+                    }
+                }
+            );
+        };
+    });
 
 });
+

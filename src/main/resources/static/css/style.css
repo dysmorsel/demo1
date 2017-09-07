@@ -905,10 +905,18 @@ html * {
 
 
 .grey-bg{
-	background: #F5F5F5;
+	background: white;
 }
 #section-gallery .section-title.center .section-box{
 	background: #82e6dc;
+}
+
+#section-debug .section-title.center .section-box{
+	background: orange;
+}
+
+.debug-piece{
+	background: #F5F5F5;
 }
 
 
