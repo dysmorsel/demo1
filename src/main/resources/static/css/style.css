@@ -81,6 +81,10 @@ table {
 	padding: 0;
 }
 
+.top-padding{
+	padding: 40px 0px 0px;
+}
+
 a,
 a:focus,
 a:active,
@@ -917,6 +921,12 @@ html * {
 
 .debug-piece{
 	background: #F5F5F5;
+}
+
+.debug-piece img{
+	padding-top: 20px;
+	height: 200px;
+	width: 200px;
 }
 
 

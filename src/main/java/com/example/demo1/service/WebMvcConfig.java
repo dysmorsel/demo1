@@ -25,9 +25,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
      */
     @Bean
     public HttpMessageConverter<String> responseBodyConverter() {
-        StringHttpMessageConverter converter = new StringHttpMessageConverter(
+        return new StringHttpMessageConverter(
                 Charset.forName("UTF-8"));
-        return converter;
     }
 
     @Override

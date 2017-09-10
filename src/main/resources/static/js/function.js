@@ -1,3 +1,4 @@
+
 function checkMessage(form) {
 
     if(form.name.value.length < 5){
@@ -55,19 +56,23 @@ $(document).ready(function () {
     $("#file").change(function () {
         /*var formData = new FormData($("#fileUpload")[0]);
         var file = $("#file")[0];*/
-        var fileUpload = $("#fileUpload")[0];
-        if($("#file").val().length>0){
+        let fileUpload = $("#fileUpload")[0];
+        let fileName = $("#file").val();
+
+        if(fileName.length>0){
             fileUpLoad();
         }
         else {
             alert("请选择文件！");
         }
-
+        console.log(fileName);
         // console.log(formData);
+
+
         function fileUpLoad() {
             $.ajax(
                 {
-                    url: "/fileLoad",
+                    url:"/fileLoad",
                     type: "POST",
                     cache: false,
                     data: new FormData(fileUpload),
@@ -76,13 +81,20 @@ $(document).ready(function () {
                     success: function (response) {
                         var fileCtx = $('#uploadCtx');
                         var data = eval(response);
+                        console.log(data);
 
-                        while (fileUpload.hasChildNodes()){
-                            fileUpload.removeChild(fileUpload.firstChild);
-                        }
-                        for(let i = 0; i<data.length; i++){
+                        fileCtx.empty();
+                        //判定是否为图片文件
+                        if (data.length===1){
+                         let fileUpLoadDiv = $('#fileUpLoadDiv');
+                         let pic = fileUpLoadDiv.find('> img');
+                         pic.remove();
+                         fileUpLoadDiv.append(`<img src="/images/upLoadFile/${data[0]}"/>`);
+                        }else {
+                            for (let i = 0; i < data.length; i++) {
 
-                            fileCtx.append(`<textarea class="form-control" rows=${data.length}  readonly="readonly"> ${data[i]} </textarea>`);
+                                fileCtx.append(`<textarea class="form-control" rows=2  readonly="readonly"> ${data[i]} </textarea>`);
+                            }
                         }
                     },
                     error: function (response) {
@@ -90,7 +102,7 @@ $(document).ready(function () {
                     }
                 }
             );
-        };
+        }
     });
 
 });

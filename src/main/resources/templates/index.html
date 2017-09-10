@@ -1,295 +1,309 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:schemaLocation="http://www.thymeleaf.org ">
 
 <head>
-<meta charset="utf-8"/>
-<title>Home</title>
-<!--  Meta View port  -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta name="description" content=""/>
-<meta name="keywords" content=""/>
+	<meta charset="utf-8"/>
+	<title>Home</title>
+	<!--  Meta View port  -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
 
-<!--   Main CSS files  -->
-<link href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" th:rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="../static/css/animate.css" th:href="@{css/animate.css}"/> <!-- Resource style -->
-<link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{css/font-awesome.min.css}" type="text/css"/>
-<link rel="stylesheet" href="../static/css/icofont.css" th:href="@{css/icofont.css}"/> <!-- Resource style -->
-<link rel="stylesheet" href="../static/css/effects.css" th:href="@{css/effects.css}"/>
-<link href="../static/css/style.css" th:href="@{css/style.css}"  rel="stylesheet" type="text/css" media="all" />
-<link href="../static/css/responsive.css" th:href="@{css/responsive.css}"  rel="stylesheet" type="text/css" media="all" />
+	<link rel="shortcut icon" href="myfavicon.ico" type="image/x-icon" />
+
+	<!--   Main CSS files  -->
+	<link href="../static/css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" th:rel="stylesheet" type="text/css"
+		  media="all"/>
+	<link rel="stylesheet" href="../static/css/animate.css" th:href="@{css/animate.css}"/> <!-- Resource style -->
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css" th:href="@{css/font-awesome.min.css}"
+		  type="text/css"/>
+	<link rel="stylesheet" href="../static/css/icofont.css" th:href="@{css/icofont.css}"/> <!-- Resource style -->
+	<link rel="stylesheet" href="../static/css/effects.css" th:href="@{css/effects.css}"/>
+	<link href="../static/css/style.css" th:href="@{css/style.css}" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../static/css/responsive.css" th:href="@{css/responsive.css}" rel="stylesheet" type="text/css"
+		  media="all"/>
 </head>
 
-<body onload="startTime()" >
+<body onload="startTime()">
 <div class="wrapper">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-						<div class="navbar-header page-scroll">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
-								<span class="sr-only">Toggle navigation</span> 
-								<span class="icon-bar"></span> 
-								<span class="icon-bar"></span> 
-								<span class="icon-bar"></span> 
-							</button>
-							<a th:href="index" class="navbar-brand logo"><img th:src="@{images/main_logo.png}" alt=""/></a>
-						</div>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li><a class="page-scroll" href="#main">Home</a></li>
-								<li><a class="page-scroll" href="#section-about">About</a></li>
-								<li><a class="page-scroll" href="#section-technique">Technique</a></li>
-								<li><a class="page-scroll" href="#section-service">services</a></li>
-								<li><a class="page-scroll" href="#section-gallery">Gallery</a></li>
-								<li><a class="page-scroll" href="#section-contact">Contact</a></li>
-							</ul>
-						</div>
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a th:href="index" class="navbar-brand logo"><img th:src="@{images/main_logo.png}" alt=""/></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a class="page-scroll" href="#main">Home</a></li>
+							<li><a class="page-scroll" href="#section-about">About</a></li>
+							<li><a class="page-scroll" href="#section-technique">Technique</a></li>
+							<li><a class="page-scroll" href="#section-service">services</a></li>
+							<li><a class="page-scroll" href="#section-gallery">Gallery</a></li>
+							<li><a class="page-scroll" href="#section-contact">Contact</a></li>
+						</ul>
 					</div>
 				</div>
+			</div>
 		</div>
 	</nav>
-<!-- /.container-fluid -->
-  
-<!-- Main Section-->
-<div class="main-banner" id="main">
-	<div class="overlay feature"></div>
-	<div class="hero-section">
+	<!-- /.container-fluid -->
+
+	<!-- Main Section-->
+	<div class="main-banner" id="main">
+		<div class="overlay feature"></div>
+		<div class="hero-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+						<div class="hero-content wow  jello">
+							<h1>I am Fucking <span>web (Java/JavaScript) </span>Programmer</h1>
+							<p> Programming is a very interesting ting, So that let do it. </p>
+							<a href="#section-service" class="btn-action white">services</a>
+							<a href="#section-contact" class="btn-action grey">Connection</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 ">
+						<div class="banner-img">
+							<h3 style="color: white;" id="time" class="text-center wow bounceInRight"
+								data-wow-delay=".3s"></h3>
+							<img th:src="@{images/banner-img.png}" alt=""
+								 class="img-responsive center-block wow bounceInRight" data-wow-delay=".4s"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Main Section sLider end-->
+
+	<!-- SECTION ABOUT START  -->
+	<section id="section-about" class="section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="hero-content wow  jello">
-						<h1>I am Fucking <span>web (Java/JavaScript) </span>Programmer</h1>
-						<p > Programming is a very interesting ting, So that let do it. </p>
-						<a href="#section-service" class="btn-action white">services</a>
-						<a href="#section-contact" class="btn-action grey">Connection</a>
+				<div class="col-md-4 col-sm-4 wow fadeInLeft">
+					<div class="pro-img-wrap">
+						<img th:src="@{images/pro.png}" alt="" class="img-responsive"/>
 					</div>
 				</div>
-				<div class="col-md-6 col-sm-6 ">
-					<div class="banner-img">
-						<h3 style="color: white;" id="time" class="text-center wow bounceInRight" data-wow-delay=".3s"></h3>
-						<img th:src="@{images/banner-img.png}" alt="" class="img-responsive center-block wow bounceInRight" data-wow-delay=".4s"/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Main Section sLider end-->
-	
-<!-- SECTION ABOUT START  -->
-<section id="section-about" class="section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4 wow fadeInLeft">
-				<div class="pro-img-wrap">
-					<img th:src="@{images/pro.png}" alt="" class="img-responsive"/>
-				</div>
-			</div>
-			
-			<div class="col-md-6 col-sm-6 col-md-offset-1 wow fadeInRight">
-				<div class="about-intro">
-					<h4>I design ugly web by programming. <br/>I have no experience in the field. </h4>
-					<p>在这里，你可以做很多事情！</p>
-					<img th:src="@{images/sign.png}" alt="" class="img-responsive"/>
-					<div class="btn-container">
-						<a href="#section-service" class="btn-action feature">services</a>
-						<a href="#" class="btn-action default">read more</a> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- SECTION ABOUT END  -->
-  
-  
-  <!-- SECTION CONTACT INFO START  -->
-  <section id="section-contact-info">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-4  contact-info-block">
-				<i class="fa fa-phone"></i>
-				<div class="info-block">
-					<h4> Call Now :</h4>
-					<p>+13344556677</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 block-bg-1 contact-info-block">
-				<i class="fa fa-envelope"></i>
-				<div class="info-block">
-					<h4> Email Me :</h4>
-					<p>805106298@qq.com</p>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 contact-info-block">
-				<i class="fa fa-building"></i>
-				<div class="info-block">
-					<h4> Location:</h4>
-					<p>XiDian University , CN</p>
-				</div>
-			</div>
-		</div>
-	</div>
-  </section>
-  <!-- SECTION CONTACT INFO END  -->
-  
-  
-  
-  <!-- SECTION EXPERIENCE START  -->
-<section id="section-experience" class="section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title wow bounceInUp">
-					<div class="section-box"></div>
-					<h1>experience</h1>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-5 col-sm-6">
-				<div class="row">
-					<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".3s">
-						<div class="experience-content-box">
-							<i class="fa fa-cloud"></i>
-							<h3>2012-2015</h3>
-							<h4>1</h4>
-							<p>2</p>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".4s">
-						<div class="experience-content-box">
-							<i class="fa fa-cloud"></i>
-							<h3>2015-2016</h3>
-							<h4>3</h4>
-							<p>4</p>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".5s">
-						<div class="experience-content-box">
-							<i class="fa fa-cloud"></i>
-							<h3>2016-2017</h3>
-							<h4>5</h4>
-							<p>6</p>
+
+				<div class="col-md-6 col-sm-6 col-md-offset-1 wow fadeInRight">
+					<div class="about-intro">
+						<h4>I design ugly web by programming. <br/>I have no experience in the field. </h4>
+						<p>在这里，你可以做很多事情！</p>
+						<img th:src="@{images/sign.png}" alt="" class="img-responsive"/>
+						<div class="btn-container">
+							<a href="#section-service" class="btn-action feature">services</a>
+							<a href="#" class="btn-action default">read more</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			<div class="col-md-5 col-sm-6 hidden-xs col-md-offset-1 wow fadeInRight">
-				<div class="about-img">
-					<img th:src="@{images/art-1.jpg}" alt="" class="img-responsive center-block"/>
-				</div>
-			</div>
 		</div>
-	</div>
-</section>
-  <!-- SECTION Experience END  -->
-  
-<!-- SECTION SERVICE START  -->
-<section id="section-technique" class="section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title center wow fadeInUp">
-					<div class="section-box"></div>
-					<h1>What i know</h1>
-				</div>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-ui-timer"></i>
-					</div>
-					
-					<div class="feature-content-block">
-						<h4>Java EE</h4>
-						<p>Java Platform，Enterprise Edition </p>
-						<a href="https://baike.baidu.com/item/Java%20EE/2180381?fr=aladdin" target="_blank" class="read-more">read more</a>
+	</section>
+	<!-- SECTION ABOUT END  -->
+
+
+	<!-- SECTION CONTACT INFO START  -->
+	<section id="section-contact-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-4  contact-info-block">
+					<i class="fa fa-phone"></i>
+					<div class="info-block">
+						<h4> Call Now :</h4>
+						<p>+13344556677</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box active">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-ui-settings"></i>
-					</div>
-					
-					<div class="feature-content-block">
-						<h4>Spring MVC</h4>
-						<p>A follow-on products of Spring FrameWork </p>
-						<a href="https://baike.baidu.com/item/spring%20MVC/5627187?fr=aladdin" target="_blank" class="read-more">read more</a>
+				<div class="col-md-4 col-sm-4 block-bg-1 contact-info-block">
+					<i class="fa fa-envelope"></i>
+					<div class="info-block">
+						<h4> Email Me :</h4>
+						<p>805106298@qq.com</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-ui-check"></i>
-					</div>
-					
-					<div class="feature-content-block">
-						<h4>SQL</h4>
-						<p>Structured Query Language </p>
-						<a href="https://baike.baidu.com/item/%E7%BB%93%E6%9E%84%E5%8C%96%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80?fromtitle=sql&amp;fromid=86007" target="_blank" class="read-more">read more</a>
+				<div class="col-md-4 col-sm-4 contact-info-block">
+					<i class="fa fa-building"></i>
+					<div class="info-block">
+						<h4> Location:</h4>
+						<p>XiDian University , CN</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="spacer"></div>
-		<div class="row">
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-ui-zoom-in"></i>
-					</div>
-					
-					<div class="feature-content-block">
-						<h4>Java SE</h4>
-						<p>Java Platform, Standard Edition </p>
-						<a href="https://baike.baidu.com/item/JAVA%20SE" target="_blank" class="read-more">read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-idea"></i>
-					</div>
-					
-					<div class="feature-content-block">
-						<h4>Spring Boot</h4>
-						<p>A entirely new frame of Spring FrameWork </p>
-						<a href="https://baike.baidu.com/item/Spring%20Boot" target="_blank" class="read-more">read more</a>
+	</section>
+	<!-- SECTION CONTACT INFO END  -->
+
+
+	<!-- SECTION EXPERIENCE START  -->
+	<section id="section-experience" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title wow bounceInUp">
+						<div class="section-box"></div>
+						<h1>experience</h1>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-sm-4 wow fadeInUp">
-				<div class="feature-content-box">
-					<div class="feature-icon-box">
-						<i class="icofont icofont-ui-zoom-out"></i>
+
+			<div class="row">
+				<div class="col-md-5 col-sm-6">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".3s">
+							<div class="experience-content-box">
+								<i class="fa fa-cloud"></i>
+								<h3>2012-2015</h3>
+								<h4>1</h4>
+								<p>2</p>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".4s">
+							<div class="experience-content-box">
+								<i class="fa fa-cloud"></i>
+								<h3>2015-2016</h3>
+								<h4>3</h4>
+								<p>4</p>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 wow bounceInUp" data-wow-delay=".5s">
+							<div class="experience-content-box">
+								<i class="fa fa-cloud"></i>
+								<h3>2016-2017</h3>
+								<h4>5</h4>
+								<p>6</p>
+							</div>
+						</div>
 					</div>
-					
-					<div class="feature-content-block">
-						<h4>JavaScript</h4>
-						<p>EveryBody Know </p>
-						<a href="https://baike.baidu.com/item/javascript" target="_blank" class="read-more">read more</a>
+				</div>
+
+				<div class="col-md-5 col-sm-6 hidden-xs col-md-offset-1 wow fadeInRight">
+					<div class="about-img">
+						<img th:src="@{images/art-1.jpg}" alt="" class="img-responsive center-block"/>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-  <!-- SECTION FEATURE END  -->
-  
-  <!-- SECTION SERVICE Start  --> 
-  <section id="section-service" class="section-padding">
+	</section>
+	<!-- SECTION Experience END  -->
+
+	<!-- SECTION SERVICE START  -->
+	<section id="section-technique" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title center wow fadeInUp">
+						<div class="section-box"></div>
+						<h1>What i know</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-ui-timer"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>Java EE</h4>
+							<p>Java Platform，Enterprise Edition </p>
+							<a href="https://baike.baidu.com/item/Java%20EE/2180381?fr=aladdin" target="_blank"
+							   class="read-more">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box active">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-ui-settings"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>Spring MVC</h4>
+							<p>A follow-on products of Spring FrameWork </p>
+							<a href="https://baike.baidu.com/item/spring%20MVC/5627187?fr=aladdin" target="_blank"
+							   class="read-more">read more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-ui-check"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>SQL</h4>
+							<p>Structured Query Language </p>
+							<a href="https://baike.baidu.com/item/%E7%BB%93%E6%9E%84%E5%8C%96%E6%9F%A5%E8%AF%A2%E8%AF%AD%E8%A8%80?fromtitle=sql&amp;fromid=86007"
+							   target="_blank" class="read-more">read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-ui-zoom-in"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>Java SE</h4>
+							<p>Java Platform, Standard Edition </p>
+							<a href="https://baike.baidu.com/item/JAVA%20SE" target="_blank" class="read-more">read
+								more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-idea"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>Spring Boot</h4>
+							<p>A entirely new frame of Spring FrameWork </p>
+							<a href="https://baike.baidu.com/item/Spring%20Boot" target="_blank" class="read-more">read
+								more</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 wow fadeInUp">
+					<div class="feature-content-box">
+						<div class="feature-icon-box">
+							<i class="icofont icofont-ui-zoom-out"></i>
+						</div>
+
+						<div class="feature-content-block">
+							<h4>JavaScript</h4>
+							<p>EveryBody Know </p>
+							<a href="https://baike.baidu.com/item/javascript" target="_blank" class="read-more">read
+								more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SECTION FEATURE END  -->
+
+	<!-- SECTION SERVICE Start  -->
+	<section id="section-service" class="section-padding">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-sm-8 wow fadeInUp">
@@ -299,14 +313,14 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row">
 				<div class="col-md-4 col-sm-4">
 					<div class="service-content-box">
 						<div class="service-icon-block c1">
 							<i class="icofont icofont-laptop"></i>
 						</div>
-						
+
 						<div class="service-content">
 							<h4>web app design</h4>
 							<p></p>
@@ -318,7 +332,7 @@
 						<div class="service-icon-block c2">
 							<i class="icofont icofont-search-alt-1"></i>
 						</div>
-						
+
 						<div class="service-content">
 							<h4>data processing</h4>
 							<p></p>
@@ -330,7 +344,7 @@
 						<div class="service-icon-block c3">
 							<i class="icofont icofont-sound-wave"></i>
 						</div>
-						
+
 						<div class="service-content">
 							<h4>program achieve</h4>
 							<p></p>
@@ -339,11 +353,11 @@
 				</div>
 			</div>
 		</div>
-  </section>
-  <!-- SECTION SERVICE END  -->
+	</section>
+	<!-- SECTION SERVICE END  -->
 
-<!--SECTION DEBUG Start-->
-<section id="section-debug" class="section-padding debug-piece">
+	<!--SECTION DEBUG Start-->
+	<section id="section-debug" class="section-padding debug-piece">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -357,249 +371,259 @@
 			<div class="row">
 				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
 					<div class="section-title ">
-						<h2 class="text-uppercase">file load testing</h2>
+						<h2 class="text-uppercase">file upload testing</h2>
 						<p>选择你要上传的文件</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
-					<form id="fileUpload" enctype="multipart/form-data" method="post" >
-						<input id="file" name="file" type="file" />
-						<input id="token" name="token" type="hidden"/>
+				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp" id="fileUpLoadDiv">
+					<form id="fileUpload" enctype="multipart/form-data" method="post">
+						<input id="file" name="file" type="file"/>
+						<!--<input id="token" name="token" type="hidden"/>-->
 					</form>
 
-					<ul id="uploadCtx" class="no-padding"></ul>
+
+					<ul id="uploadCtx" class="top-padding"></ul>
 				</div>
 			</div>
 
 		</div>
-</section>
-	  
-<!--         SECTION GALLERY START  -->
-<section id="section-gallery" class="section-padding grey-bg">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="section-title center wow fadeInUp">
-					<div class="section-box"></div>
-					<h1>AWESOME GALLERY</h1>
+	</section>
+
+	<!--         SECTION GALLERY START  -->
+	<section id="section-gallery" class="section-padding grey-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title center wow fadeInUp">
+						<div class="section-box"></div>
+						<h1>AWESOME GALLERY</h1>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div class="container">
-		 <ul class="work">
+
+		<div class="container">
+			<ul class="work">
 				<li class="filter" data-filter="all">all</li>
 				<li class="filter" data-filter=".web">Web design</li>
 				<li class="filter" data-filter=".graphic">Graphic</li>
 				<li class="filter" data-filter=".logo">logo</li>
 			</ul>
-		 <div class="work-inner "> 
-			<div class="grid">
-				<figure class="effect-zoe mix identity web ">
-					<img th:src="@{images/portfolio/portfolio1.jpg}" alt="img25"/>
-					<figcaption>
-						<h2> environment</h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio1.jpg}"><span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description">quiet environment</p>
-					</figcaption>			
-				</figure>
-				<figure class="effect-zoe mix identity graphic">
-					<img th:src="@{images/portfolio/portfolio2.jpg}" alt="img26"/>
-					<figcaption>
-						<h2> <span>Running</span></h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio2.jpg}">  <span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description">Running under the sun</p>
-					</figcaption>			
-				</figure>
-				<figure class="effect-zoe  mix web ">
-					<img th:src="@{images/portfolio/portfolio3.jpg}" alt="img26"/>
-					<figcaption>
-						<h2><span>Coding</span></h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio3.jpg}"><span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description">Do you like this?</p>
-					</figcaption>			
-				</figure>
-				<figure class="effect-zoe  mix web ">
-					<img th:src="@{images/portfolio/portfolio4.jpg}" alt="img26"/>
-					<figcaption>
-						<h2> Code</h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio4.jpg}"><span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description">X-Code</p>
-					</figcaption>			
-				</figure>
-				<figure class="effect-zoe logo  mix  ">
-					<img th:src="@{images/portfolio/portfolio5.jpg}" alt="img26"/>
-					<figcaption>
-						<h2>apple</h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio5.jpg}"><span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description">~~~</p>
-					</figcaption>			
-				</figure>
-				<figure class="effect-zoe    mix  logo">
-					<img th:src="@{images/portfolio/portfolio6.jpg}" alt="img26"/>
-					<figcaption>
-						<h2><span>Fly</span></h2>
-						<p class="icon-links">
-							<a href="#"><span class="icon-heart"></span></a>
-							<a th:href="@{images/portfolio/portfolio6.jpg}"><span class="icon-eye"></span></a>
-							<a href="#"><span class="icon-paper-clip"></span></a>
-						</p>
-						<p class="description"></p>
-					</figcaption>			
-				</figure>
+			<div class="work-inner ">
+				<div class="grid">
+					<figure class="effect-zoe mix identity web ">
+						<img th:src="@{images/portfolio/portfolio1.jpg}" alt="img25"/>
+						<figcaption>
+							<h2> environment</h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio1.jpg}"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">quiet environment</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-zoe mix identity graphic">
+						<img th:src="@{images/portfolio/portfolio2.jpg}" alt="img26"/>
+						<figcaption>
+							<h2><span>Running</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio2.jpg}"> <span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">Running under the sun</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-zoe  mix web ">
+						<img th:src="@{images/portfolio/portfolio3.jpg}" alt="img26"/>
+						<figcaption>
+							<h2><span>Coding</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio3.jpg}"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">Do you like this?</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-zoe  mix web ">
+						<img th:src="@{images/portfolio/portfolio4.jpg}" alt="img26"/>
+						<figcaption>
+							<h2> Code</h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio4.jpg}"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">X-Code</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-zoe logo  mix  ">
+						<img th:src="@{images/portfolio/portfolio5.jpg}" alt="img26"/>
+						<figcaption>
+							<h2>apple</h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio5.jpg}"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">~~~</p>
+						</figcaption>
+					</figure>
+					<figure class="effect-zoe    mix  logo">
+						<img th:src="@{images/portfolio/portfolio6.jpg}" alt="img26"/>
+						<figcaption>
+							<h2><span>Fly</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a th:href="@{images/portfolio/portfolio6.jpg}"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description"></p>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
-		</div>
-	</div><!-- Container Full End -->
-</section>
-  <!-- SECTION GALLERY END  --> 
-  
-  
-  <!-- section CLIENT START -->
-  <section id="section-client">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client1.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client2.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client3.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client4.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client5.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-			<div class="col-md-2 col-sm-6">
-				<a href="#"><img th:src="@{images/client/client6.png}" alt="" class="img-responsive center-block"/></a>
-			</div>
-		</div>
-	</div>
-  </section>
-  <!-- section CLIENT END -->
-  
-  <!-- section CONTACT START -->
-<section id="section-contact" class="section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 wow fadeInUp">
-				<div class="section-title">
-					<h2 class="text-uppercase">stay comment</h2>
-					<p>If you want to contact with me, please leave a message.</p>
+		</div><!-- Container Full End -->
+	</section>
+	<!-- SECTION GALLERY END  -->
+
+
+	<!-- section CLIENT START -->
+	<section id="section-client">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client1.png}" alt="" class="img-responsive center-block"/></a>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client2.png}" alt="" class="img-responsive center-block"/></a>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client3.png}" alt="" class="img-responsive center-block"/></a>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client4.png}" alt="" class="img-responsive center-block"/></a>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client5.png}" alt="" class="img-responsive center-block"/></a>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<a href="#"><img th:src="@{images/client/client6.png}" alt="" class="img-responsive center-block"/></a>
 				</div>
 			</div>
 		</div>
-		
-		<div class="row">
-			<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
-				<div class="contact-form">
-					<form action="index#section-contact" id="contact-form" method="post" onsubmit="return checkMessage(this)">
-						<div class="col-md-6 col-sm-12">
-							<div class="form-group" id="name-field">
-								<input class="form-control contact-form-field cffield-upper" name="name" id="form-name" placeholder="Your name" type="text" required="required"/> </div>
-						</div>
-						<div class="col-md-6 col-sm-12">
-							<div class="form-group" id="email-field">
-								<input class="form-control contact-form-field cffield-upper" name="email" id="form-email" placeholder="Your email" type="email" required="required"/> </div>
-						</div>
-						<div class="col-md-12 col-sm-12">
-							<div class="form-group" id="subject-field">
-								<input class="form-control contact-form-field cffield-upper" name="question" id="form-subject" placeholder="Your question" type="text" required="required"/> </div>
-						</div>
-						
-						<div class="col-md-12">
-							<div class="form-group form-text text-center" id="message-field">
-								<textarea cols="30" rows="6" placeholder="Your message" class="form-control contact-form-field" name="message" id="form-message" required="required"/>
+	</section>
+	<!-- section CLIENT END -->
+
+	<!-- section CONTACT START -->
+	<section id="section-contact" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 wow fadeInUp">
+					<div class="section-title">
+						<h2 class="text-uppercase">stay comment</h2>
+						<p>If you want to contact with me, please leave a message.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-2 wow fadeInUp">
+					<div class="contact-form">
+						<form action="index#section-contact" id="contact-form" method="post"
+							  onsubmit="return checkMessage(this)">
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group" id="name-field">
+									<input class="form-control contact-form-field cffield-upper" name="name"
+										   id="form-name" placeholder="Your name" type="text" required="required"/>
+								</div>
 							</div>
-						</div>
-						<div class="col-md-12 text-center">
-							<button class="btn btn-action feature" type="submit">Send Message</button>
-						</div>
-					</form>
+							<div class="col-md-6 col-sm-12">
+								<div class="form-group" id="email-field">
+									<input class="form-control contact-form-field cffield-upper" name="email"
+										   id="form-email" placeholder="Your email" type="email" required="required"/>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<div class="form-group" id="subject-field">
+									<input class="form-control contact-form-field cffield-upper" name="question"
+										   id="form-subject" placeholder="Your question" type="text"
+										   required="required"/></div>
+							</div>
+
+							<div class="col-md-12">
+								<div class="form-group form-text text-center" id="message-field">
+									<textarea cols="30" rows="6" placeholder="Your message"
+											  class="form-control contact-form-field" name="message" id="form-message"
+											  required="required"/>
+								</div>
+							</div>
+							<div class="col-md-12 text-center">
+								<button class="btn btn-action feature" type="submit">Send Message</button>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!-- section CONTACT END -->
-<section id="section-message" class="section-padding">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 wow rotateInUpLeft">
-				<div class="section-title">
-					<h2 class="text-uppercase">Message</h2>
+	</section>
+	<!-- section CONTACT END -->
+	<section id="section-message" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 wow rotateInUpLeft">
+					<div class="section-title">
+						<h2 class="text-uppercase">Message</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-md-offset-2 text-center wow rotateInUpLeft" id="allMessage">
+					<!--<label for="showMessage"></label><textarea class="form-control" rows="4" id="showMessage" readonly="readonly"></textarea>-->
+				</div>
+				<div class="col-md-12 text-center">
+					<button class="btn-action feature" type="button" id="MessageButton">Show Message</button>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!--  SECTION FOOTER START   -->
+	<footer id="section-footer">
+		<div class="overlay feature"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center wow fadeInUp">
+					<div class="footer-content-block">
+						<h2>Ignorant7</h2>
+						<ul class="list-inline">
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">twitter</a></li>
+							<li><a href="#">linkedin</a></li>
+							<li><a href="#">pinterest</a></li>
+							<li><a href="#">behance</a></li>
+							<li><a href="#">Dribbble</a></li>
+						</ul>
+						<p>Copyright &copy; 2017.Ignorant7.</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-8 col-sm-8 col-md-offset-2 text-center wow rotateInUpLeft" id="allMessage">
-				<!--<label for="showMessage"></label><textarea class="form-control" rows="4" id="showMessage" readonly="readonly"></textarea>-->
-			</div>
-			<div class="col-md-12 text-center">
-				<button class="btn-action feature" type="button" id="MessageButton">Show Message</button>
-			</div>
+	</footer>
+	<!--  SECTION FOOTER END   -->
 
-		</div>
-	</div>
-</section>
 
-<!--  SECTION FOOTER START   -->
-<footer id="section-footer" >
-<div class="overlay feature"></div>
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 text-center wow fadeInUp">
-			<div class="footer-content-block">
-				<h2>Ignorant7</h2>
-				<ul class="list-inline">
-					<li><a href="#">Facebook</a></li>	
-					<li><a href="#">twitter</a></li>	
-					<li><a href="#">linkedin</a></li>	
-					<li><a href="#">pinterest</a></li>	
-					<li><a href="#">behance</a></li>	
-					<li><a href="#">Dribbble</a></li>	
-				</ul>
-				<p>Copyright &copy; 2017.Ignorant7.</p>
-			</div>
-		</div>
-	</div>
-</div>
-</footer>
-<!--  SECTION FOOTER END   -->
-  
-   
 	<!-- Scroll To Top -->
 
-	  <a id="back-top" class="back-to-top page-scroll" href="#main">
-	  <i class="icofont icofont-stylish-up"></i>
-	  </a>
+	<a id="back-top" class="back-to-top page-scroll" href="#main">
+		<i class="icofont icofont-stylish-up"></i>
+	</a>
 
 	<!-- Scroll To Top Ends-->
 
@@ -608,9 +632,10 @@
 
 <!-- Jquery and Js Plugins -->
 <script type="text/javascript" src="../static/js/jquery.min.js" th:src="@{js/jquery.min.js}"></script>
-<script type="text/javascript" src="../static/js/bootstrap.min.js" th:src="@{js/bootstrap.min.js}" ></script>
-<script src="../static/js/jquery.mixitup.js" th:src="@{js/jquery.mixitup.js}" ></script>
-<script type="text/javascript" src="../static/js/jquery.easing.1.3.min.js" th:src="@{js/jquery.easing.1.3.min.js}"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js" th:src="@{js/bootstrap.min.js}"></script>
+<script src="../static/js/jquery.mixitup.js" th:src="@{js/jquery.mixitup.js}"></script>
+<script type="text/javascript" src="../static/js/jquery.easing.1.3.min.js"
+		th:src="@{js/jquery.easing.1.3.min.js}"></script>
 <script type="text/javascript" src="../static/js/wow.js" th:src="@{js/wow.js}"></script>
 <script type="text/javascript" src="../static/js/custom.js" th:src="@{js/custom.js}"></script>
 <script type="text/javascript" th:src="@{js/function.js}"></script>
