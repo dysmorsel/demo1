@@ -4,11 +4,7 @@ import com.google.gson.Gson;
 import org.apache.poi.hwpf.extractor.WordExtractor;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,7 +13,7 @@ import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 public class fileLoadController {
 
     private Gson gson = new Gson();
@@ -30,9 +26,11 @@ public class fileLoadController {
         String fileSuffix = fileName.substring(fileName.lastIndexOf("."));
         System.out.println(fileSuffix);
         lineList.clear();
-        File dir = new File("");
+        //编译前的代码路径
+//        File dir = new File("");
 //        String path = dir.getCanonicalPath()+"/src/main/resources/static/images/upLoadFile/";
 
+        //编译后的代码路径
         String path = this.getClass().getResource("/").getPath()+"/static/images/upLoadFile/";
         //解决项目路径中文乱码问题
         path = URLDecoder.decode(path,"UTF-8");

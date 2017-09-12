@@ -76,29 +76,45 @@ $(document).ready(function () {
                     type: "POST",
                     cache: false,
                     data: new FormData(fileUpload),
+                    dataType:"json",
                     processData: false,
                     contentType: false,
-                    success: function (response) {
+                    success: function (data) {
                         var fileCtx = $('#uploadCtx');
-                        var data = eval(response);
-                        console.log(data);
-
-                        fileCtx.empty();
+                        let fileUpLoadDiv = $('#fileUpLoadDiv');
+                        let figure = fileUpLoadDiv.find('> figure');
                         //判定是否为图片文件
-                        if (data.length===1){
-                         let fileUpLoadDiv = $('#fileUpLoadDiv');
-                         let pic = fileUpLoadDiv.find('> img');
-                         pic.remove();
-                         fileUpLoadDiv.append(`<img src="/images/upLoadFile/${data[0]}"/>`);
-                        }else {
+
+                         // var data = eval(response);
+
+                        console.log(data);
+                        fileCtx.empty();
+                        figure.remove();
+                        let fileSuffix = fileName.substring(fileName.lastIndexOf("."));
+                        console.log(fileSuffix);
+                        if (fileSuffix===".png"||fileSuffix===".jpg"||fileSuffix===".bmp"||fileSuffix===".tiff"||fileSuffix===".gif"){
+                         fileUpLoadDiv.append(
+                             `<figure class="effect-zoe mix identity web ">
+						        <img src="images/upLoadFile/${data[0]}" alt="图片无法显示"/>
+                                    <figcaption>
+                                        <h2> SHOW</h2>
+                                        <p class="icon-links">
+                                            <a href="images/upLoadFile/${data[0]}"><span class="icon-eye"></span></a>
+                                        </p>
+                                        <p class="description"></p>
+                                        <p class="description">${data[0]}</p>
+                                    </figcaption>
+					            </figure>`);
+                        }
+                        if(fileSuffix===".txt"||fileSuffix===".doc"||fileSuffix===".docx"){
                             for (let i = 0; i < data.length; i++) {
 
                                 fileCtx.append(`<textarea class="form-control" rows=2  readonly="readonly"> ${data[i]} </textarea>`);
                             }
                         }
                     },
-                    error: function (response) {
-                        alert(response);
+                    error: function () {
+                        alert(`文件上传出现错误！`);
                     }
                 }
             );
